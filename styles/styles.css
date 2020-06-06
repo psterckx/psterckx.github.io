@@ -7,7 +7,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #121d26;
-    font-size: 1vw;
+    font-size: medium;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 }   
 
 .profile-container{
-    background-color: #f57f46;
+    /* background-color: #f57f46; */
+    background-color: #0bfa03;
+
     padding: 0 25%;
 
     height:100vh;
