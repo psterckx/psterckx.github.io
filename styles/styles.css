@@ -6,21 +6,21 @@
 html, body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #121d26;
+    color: #1d2f3d;
     font-size: medium;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #121d26;
+    color: #1d2f3d;
     font-size: x-large;
 }  
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #121d26;
+    color: #1d2f3d;
     font-size: xx-large;
 }   
 
@@ -41,7 +41,8 @@ h1 {
 
 .experiences {
     background-color: #e9dcd5 ;
-    padding: 100px 15%;
+    padding: 100px 22%;
+    margin-top: -100px;
 }
 
 .section-header {
@@ -49,7 +50,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
-    color: #121d26;
+    color: #f57f46;
+    margin-top: 30px;
 }
 
 .section-header-2 {
@@ -57,7 +59,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: left;
-    color: #121d26;
+    color: #f57f46;
 }
 
 .section-header-3 {
@@ -65,26 +67,28 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-align: left;
-    color: #121d26;
+    color: #1d2f3d;
+    /* margin-top: 10px; */
 }
 
 .section-header-4 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-align: left;
-    color: #121d26;
-    padding-top: 0.5em;
+    color: #1d2f3d;
+    padding-top: 0.3em;
 }
 
 hr {
-    width: 50%;
+    width: 100%;
     height: 1px;
     border-width: 0;
     margin: -30px auto;
     /* align-self: center; */
-    color: #121d26;
-    background-color: #121d26;
+    color: #1d2f3d;
+    background-color: #1d2f3d;
+    opacity: 50%;
 }
 
 .icons {
@@ -102,6 +106,10 @@ hr {
     margin-left: 0.5rem;
 }
 
-/* .description {
-    padding-top: 2em;
-} */
+.sub-section {
+    margin: 60px 0 60px 0;
+}
+
+.down-arrow {
+    font-size: 100px;
+}
