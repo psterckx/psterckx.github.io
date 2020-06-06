@@ -5,6 +5,8 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #121d26;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,10 +60,26 @@ h1, h2, h3, h4, h5, h6 {
     color: #121d26;
 }
 
-.section-subheader {
+.section-header-2 {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    text-align: left;
+    color: #121d26;
+}
+
+.section-header-3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #121d26;
+}
+
+.section-header-4 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     text-align: left;
     color: #121d26;
 }
@@ -74,4 +92,36 @@ hr {
     /* align-self: center; */
     color: #746530;
     background-color: #746530;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;
+}
+
+.items div {
+    /* margin: 0px 0px 0px 0px; */
+    /* border: 2px solid black; */
+    padding: 0px;
+}
+
+.item-descrip {
+    /* margin-left: 15%; */
+    margin-top: 2em;
+}
+
+.icons {
+    display:flex;
+    align-items: center;
+}
+
+.icons-icon {
+    padding-left: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.icons-description {
+    margin-left: 0.5rem;
 }
