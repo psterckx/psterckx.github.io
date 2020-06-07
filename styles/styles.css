@@ -3,7 +3,11 @@
     height: auto;
   }
 
-html, body {
+html {
+    /* scroll-behavior: smooth; */
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #1d2f3d;
@@ -68,7 +72,10 @@ h1 {
     font-weight: 500;
     text-align: left;
     color: #1d2f3d;
-    /* margin-top: 10px; */
+}
+
+.skills .section-header-3 {
+    color: #e9dcd5;
 }
 
 .section-header-4 {
@@ -80,6 +87,10 @@ h1 {
     padding-top: 0.2em;
 }
 
+.skills .section-header-4 {
+    color: #e9dcd5;
+}
+
 hr {
     width: 100%;
     height: 1px;
@@ -89,6 +100,16 @@ hr {
     color: #1d2f3d;
     background-color: #1d2f3d;
     opacity: 50%;
+}
+
+.skills hr {
+    color: #e9dcd5;
+    background-color: #e9dcd5;
+}
+
+.profile-hr {
+    margin: 5% 0px;
+    width: 50%;
 }
 
 .icons {
@@ -113,3 +134,32 @@ hr {
 .down-arrow {
     font-size: 100px;
 }
+
+i.down-arrow:hover {
+    color: #e9dcd5;
+}
+
+.skills {
+    background-color: #1d2f3d;
+    margin-top: -100px;
+    color: #e9dcd5;
+    padding: 10px 30%;
+}
+
+.list-of-skills div {
+    font-size: 24px;
+}
+
+.fas.fa-circle {
+    font-size: 15px;
+}
+
+.fas.fa-circle.opaque {
+    opacity: 30%;
+}
+
+/* .list-of-skills .w3-cell {
+    border: 2px solid white;
+    background-color: #000000;
+    padding: 0px;
+} */
