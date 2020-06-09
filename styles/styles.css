@@ -4,7 +4,7 @@
   }
 
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -163,3 +163,18 @@ i.down-arrow:hover {
     background-color: #000000;
     padding: 0px;
 } */
+
+.contact {
+    background-color: #1d2f3d;
+    color: #e9dcd5;
+    margin-top: -100px;
+    padding-bottom: 50px;
+}
+
+.contact .w3-row {
+    margin: 40px 30%;
+}
+
+.contact i:hover {
+    color: #f57f46;
+}
