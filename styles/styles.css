@@ -68,8 +68,17 @@ div {
 }
 
 .profile div p {
-    margin: 200px 10px;
+    margin: 150px 10px;
     font-size: 1.5em;
+}
+
+.profile h1 {
+    font-size: 2em;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 300;
+    color: white;
+    font-style: italic;
 }
 
 .timeline {
