@@ -3,7 +3,135 @@
     padding: 0;
 }
 
+body {
+    font-family: Roboto;
+    font-weight: 300;
+}
+
 div {
     margin-top: -10px;
 }
 
+.splash-page h1 {
+    font-size: 6em;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    color: white
+}
+
+.splash-page h2 {
+    font-size: 5em;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 200;
+    color: white
+}
+
+.w3-dropdown-hover {
+    margin-top: 10px;
+    background-color: black;
+    font-size: 4em;
+}
+
+.w3-dropdown-content a {
+    font-size: 40px;
+}
+
+.splash-page {
+    /* background-image: url('../images/selfie_sf.JPG'); */
+    background-color: black;
+    padding: 250px 0;
+    /* background-size: cover; */
+}
+
+.splash-page hr {
+    width: 60%;
+    border-width: .2em;
+    color: white;
+    margin: 0 auto;
+}
+
+.profile {
+    margin-top: 4px;
+    padding: 100px 0;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.profile-picture {
+    float: left;
+    width: 40%;
+    margin: 0 40px;
+}
+
+.profile div p {
+    margin: 200px 10px;
+    font-size: 1.5em;
+}
+
+.timeline {
+    margin-top: 4px;
+    padding: 50px 50px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+.timeline h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    color: black;
+}
+
+.timeline h2 {
+    font-size: 2.2em;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 500;
+    color: black;
+}
+
+.timeline h3 {
+    font-size: 1.7em;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+}
+
+.timeline h4 {
+    font-size: 1.4em;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+}
+
+.timeline p {
+    font-size: 30px;
+}
+
+.event-image {
+    width: 30%;
+    /* border: solid 2px black; */
+}
+
+.event-info {
+    width: 70%;
+    /* border: solid 2px black; */
+}
+
+.event-picture {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.event {
+    margin: 40px 0;
+}
