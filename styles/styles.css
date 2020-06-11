@@ -61,7 +61,7 @@ div {
     color: white;
     font-size: 30px;
     display: inline-block;
-    height: 60vh;
+    height: 62vh;
 }
 
 .profile-picture {
@@ -91,7 +91,7 @@ div {
 
 .timeline {
     margin-top: 4px;
-    padding: 50px 50px;
+    padding: 50px 20px;
     background-color: white;
     color: black;
     font-size: 20px;
@@ -115,11 +115,11 @@ div {
 }
 
 .timeline h3 {
-    font-size: 1.7em;
+    font-size: 1.8em;
     text-align: left;
     font-family: Roboto;
     font-weight: 400;
-    color: black;
+    color: red;
 }
 
 .timeline h4 {
@@ -127,21 +127,36 @@ div {
     text-align: left;
     font-family: Roboto;
     font-weight: 400;
-    color: red;
+    color: black;
+}
+
+.timeline button {
+    font-size: 1.4em;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+    border-width: 0px;
 }
 
 .timeline p {
     font-size: 30px;
 }
 
+.event {
+    margin: 40px 0;
+}
+
 .event-image {
     width: 30%;
     /* border: solid 2px black; */
+    /* vertical-align: middle; */
 }
 
 .event-info {
     width: 70%;
     /* border: solid 2px black; */
+    border-left: solid 2px black;
 }
 
 .event-picture {
@@ -149,6 +164,4 @@ div {
     padding: 20px 0;
 }
 
-.event {
-    margin: 40px 0;
-}
+
