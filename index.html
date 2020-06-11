@@ -27,10 +27,10 @@
                 <div class="w3-dropdown-hover w3-mobile">
                 <button class="w3-button w3-black w3-hover-black"><i class="fas fa-bars"></i> </button>
                 <div class="w3-dropdown-content w3-bar-block w3-black">
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">Experiences</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">Skills</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">Projects</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+                    <a href="#timeline" class="w3-bar-item w3-button w3-hover-white">Experiences</a>
+                    <a href="#skills" class="w3-bar-item w3-button w3-hover-white">Skills</a>
+                    <!-- <a href="#" class="w3-bar-item w3-button w3-hover-white">Projects</a> -->
+                    <a href="#footer" class="w3-bar-item w3-button w3-hover-white">Contact</a>
                 </div>
                 </div>
             </div>
@@ -54,11 +54,19 @@
             </div>
         </div>
 
+        <div id="timeline" class="anchor">
+        </div>
+
         <div class="timeline">
             <h1>Experiences</h1>
 
             <div class="w3-container event">
-                
+
+                <div class="w3-container w3-cell event-image w3-center">
+                    <img class="event-picture w3-circle" src="images/clemson.jpg" alt="profile picture">
+                    <!-- <h4><i class="fas fa-fw fa-calendar"></i> August 2016 - May 2020</h4> -->
+                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4> -->
+                </div>
     
                 <div class="w3-container w3-cell event-info">
                     
@@ -67,23 +75,13 @@
                     <h4><i class="fas fa-fw fa-calendar"></i> August 2016 - May 2020</h4>
                     <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4>
                     <!-- <h4> <a href="www.clemson.edu" target="_blank"> <i class="fas fa-link"></i> www.clemson.edu </a> </h4> -->
-                    
                     <button id="button1" onclick="myFunction('clemson-read-more');change('button1');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
-
-                    
-                </div>
-
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture w3-circle" src="images/clemson.jpg" alt="profile picture">
-                    <!-- <h4><i class="fas fa-fw fa-calendar"></i> August 2016 - May 2020</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4> -->
                 </div>
 
                 <p id="clemson-read-more" class="w3-hide">
                     I enjoyed a variety of experiences at Clemson that helped shape my personal and professional life. Through the <strong>National Scholars Program</strong>,
                     I traveled to South Africa and Alaska to explore topics of inequaliy, social justice, and natural resource management. On campus,
                     I participated in various research projects and co-founded <strong>CUhackit</strong>, Clemson's first hackathon event.
-                
                 </p>
             </div>
 
@@ -101,10 +99,9 @@
                     <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4>
                     
                     <button id="button2" onclick="myFunction('cuhackit-read-more');change('button2');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
-
-                    <p id="cuhackit-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
+                <p id="cuhackit-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
 
             <div class="w3-container event">
@@ -122,9 +119,9 @@
                     
                     <button id="button3" onclick="myFunction('bosch2nd-read-more');change('button3');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
 
-                    <p id="bosch2nd-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
+                <p id="bosch2nd-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
 
             <div class="w3-container event">
@@ -142,9 +139,9 @@
 
                     <button id="button4" onclick="myFunction('gtl-read-more');change('button4');" class="w3-button w3-left-align "><i class='fas fa-plus'></i> Read more</button>
 
-                    <p id="gtl-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
+                <p id="gtl-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
 
             <div class="w3-container event">
@@ -162,9 +159,9 @@
                     
                     <button id="button4" onclick="myFunction('bosch1st-read-more');change('button4');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
 
-                    <p id="bosch1st-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
+                <p id="bosch1st-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
 
             <div class="w3-container event">
@@ -182,14 +179,15 @@
                     
                     <button id="button5" onclick="myFunction('makerspace-read-more');change('button5');" class="w3-button w3-left-align "><i class='fas fa-plus'></i> Read more</button>
 
-                    <p id="makerspace-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
                 </div>
+                <p id="makerspace-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             
         </div>
 
+        <div id="skills" class="anchor">
+        </div>
 
         <div class="skills">
             <hr>
@@ -213,7 +211,7 @@
                     <li>SOLIDWORKS</li>
                     <li>Fusion 360</li>
                     <li>MS Office</li>
-                    <li>Power BI</li>
+                    <li>MS sPower BI</li>
                     <li>SAP</li>
                 </ul>
             </div>
@@ -239,10 +237,19 @@
         </div>
 
         <div class="projects">
+        </div>
 
+        <div id="footer" class="anchor">
         </div>
 
         <div class="footer">
+            <hr>
+            <h1>Contact</h1>
+            <br>
+            <ul>
+                <li> <a href="mailto:pasterckx@gmail.com"> <i class="fas fa-envelope fa-fw fa-5x"></i> </a> </li>
+                <li> <a href="https://www.linkedin.com/in/petersterckx/"> <i class="fab fa-linkedin fa-fw fa-5x"></i> </a> </li>
+            </ul>
 
         </div>
 
