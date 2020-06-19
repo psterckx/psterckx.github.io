@@ -39,11 +39,8 @@ div {
 }
 
 .splash-page {
-    /* background-image: url('../images/selfie_sf.JPG'); */
     background-color: black;
     padding: 250px 0;
-    /* background-size: cover; */
-    /* display: none; */
     height: 40vh;
 }
 
@@ -55,19 +52,19 @@ div {
 }
 
 .profile {
-    margin: 0 0;
-    padding: 100px 0;
+    /* margin: -2px 0;
+    padding: 200px 0;
     background-color: black;
     color: white;
     font-size: 30px;
     display: inline-block;
-    height: 62vh;
+    height: 62vh; */
 }
 
 .profile-picture {
-    float: left;
+    /* float: left;
     width: 40%;
-    margin: 0 40px;
+    margin: 0 40px; */
 }
 
 .profile p {
@@ -75,10 +72,10 @@ div {
     font-size: 1.5em;
 }
 
-.profile div {
+/* .profile div {
     margin: 5vh 0;
     display: inline-block;
-}
+} */
 
 .profile h1 {
     font-size: 2em;
@@ -232,4 +229,83 @@ a {
 
 a:hover {
     color: red;
+}
+
+@media only screen and (min-width: 768px) {
+    .profile {
+        padding: 25px 50px;
+    }
+
+    .profile p {
+        margin: 100px 5px;
+        font-size: 1.3em;
+    }    
+
+    .splash-page {
+        padding: 150px 0 50px 0;
+        height: 40vh;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    .profile {
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        margin: -2px 0;
+        /* padding: auto 0; */
+        height: auto;
+        /* display: block; */
+        /* display: inline-block; */
+        /* height: 62vh; */
+    }
+
+    .profile div {
+        width: 60%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .profile p {
+        margin: 50px 5px;
+        font-size: .8em;
+    }    
+    
+    .profile-picture {
+        float: left;
+        width: 40%;
+        margin: 0 auto;
+        /* display: inline-block; */
+    }
+
+    .splash-page {
+        padding: 100px 0 50px 0;
+        height: 40vh;
+    }
+
+    .splash-page h1 {
+        font-size: 4em;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: 400;
+        color: white
+    }
+    
+    .splash-page h2 {
+        font-size: 3em;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: 200;
+        color: white
+    }
+
+    .splash-page hr {
+        width: 40%;
+        border-width: .05em;
+        color: white;
+        margin: 0 auto;
+    }
+
+    
 }
