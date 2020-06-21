@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
     <title>Peter Sterckx</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6f160e49be.js" crossorigin="anonymous"></script>
@@ -13,248 +13,41 @@
 </head>
   <body>
 
-    <div class="wrapper">
-
-        <!-- <div class="w3-bar w3-white">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <header>
+        <!-- <div class="logo-container">
+            <h4>Peter Sterckx</h4>
         </div> -->
 
-        <div class="w3-top">
-            <div class="w3-bar w3-black">
-                <div class="w3-dropdown-hover w3-mobile">
-                <button class="w3-button w3-black w3-hover-black"><i class="fas fa-bars"></i> </button>
-                <div class="w3-dropdown-content w3-bar-block w3-black">
-                    <a href="#welcome" class="w3-bar-item w3-button w3-hover-white">Welcome</a>
-                    <a href="#timeline" class="w3-bar-item w3-button w3-hover-white">Experiences</a>
-                    <a href="#skills" class="w3-bar-item w3-button w3-hover-white">Skills</a>
-                    <!-- <a href="#" class="w3-bar-item w3-button w3-hover-white">Projects</a> -->
-                    <a href="#footer" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-                </div>
-                </div>
-            </div>
-         </div>
-        
-        <div class="splash-page" id="welcome">
-            <h1>Peter Sterckx</h1>
-            <hr>
-            <h2>Personal Site</h2>
-        </div>
-
-        <div class="profile">
-            <div style="display: block;margin:0 auto 100px auto;height:45vh">
-                <img class="profile-picture" src="images/profile.jpg" alt="profile picture">
-                
-                <div>
-                    <p> <strong><i>Welcome!</i> </strong> <br> <br>
-                    I'm an aspiring <br> <strong> software engineer</strong>  <br> with a background in <br> <strong>mechanical engineering</strong>.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="timeline" class="anchor">
-        </div>
-
-        <div class="timeline">
-            <h1>Experiences</h1>
-
-            <div class="w3-container event">
-
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture w3-circle" src="images/clemson.jpg" alt="profile picture">
-                    <!-- <h4><i class="fas fa-fw fa-calendar"></i> August 2016 - May 2020</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4> -->
-                </div>
-    
-                <div class="w3-container w3-cell event-info">
-                    
-                    <h2>Clemson University</h2>
-                    <h3>B.S. in Mechanical Engineering</h3>
-                    <h4><i class="fas fa-fw fa-calendar"></i> August 2016 - May 2020</h4>
-                    <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4>
-                    <!-- <h4> <a href="www.clemson.edu" target="_blank"> <i class="fas fa-link"></i> www.clemson.edu </a> </h4> -->
-                    <button id="button1" onclick="myFunction('clemson-read-more');change('button1');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
-                </div>
-
-                <p id="clemson-read-more" class="w3-hide">
-                    I enjoyed a variety of experiences at Clemson that helped shape my personal and professional life. Through the <strong>National Scholars Program</strong>,
-                    I traveled to South Africa and Alaska to explore topics of inequaliy, social justice, and natural resource management. On campus,
-                    I participated in various research projects and co-founded <strong>CUhackit</strong>, Clemson's first hackathon event.
-                </p>
-            </div>
-
-            <div class="w3-container event">
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture" src="images/cuhackit.jpg" alt="profile picture">
-                    <!-- <h4> <i class="fas fa-fw fa-calendar"></i> October 2017 - February 2020</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4> -->
-                </div>
-    
-                <div class="w3-container w3-cell event-info">
-                    <h2>CUhackit</h2>
-                    <h3>Co-Founder and Co-Director</h3>
-                    <h4> <i class="fas fa-fw fa-calendar"></i> October 2017 - February 2020</h4>
-                    <h4><i class="fas fa-fw fa-map-marker-alt"></i> Clemson, SC</h4>
-                    
-                    <button id="button2" onclick="myFunction('cuhackit-read-more');change('button2');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
-                </div>
-                <p id="cuhackit-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
-
-            <div class="w3-container event">
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture" src="images/bosch.jpg" alt="profile picture">
-                    <!-- <h4> <i class="fas fa-fw fa-calendar"></i> Summer 2019</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4> -->
-                </div>
-    
-                <div class="w3-container w3-cell event-info">
-                    <h2>Robert Bosch GmbH</h2>
-                    <h3>Engineering Co-op, 2nd rotation</h3>
-                    <h4> <i class="fas fa-fw fa-calendar"></i> Summer 2019</h4>
-                    <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4>
-                    
-                    <button id="button3" onclick="myFunction('bosch2nd-read-more');change('button3');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
-
-                </div>
-                <p id="bosch2nd-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
-
-            <div class="w3-container event">
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture w3-circle" src="images/mountains.JPG" alt="profile picture">
-                    <!-- <h4> <i class="fas fa-fw fa-calendar"></i> Summer 2018</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4> -->
-                </div>
-    
-                <div class="w3-container w3-cell event-info">
-                    <h2>Georgia Institute <br> of Technology</h2>
-                    <h3>Georgia Tech Lorraine <br> Study Abroad Program</h3>
-                    <h4> <i class="fas fa-fw fa-calendar"></i> Fall 2018</h4>
-                    <h4><i class="fas fa-fw fa-map-marker-alt"></i> Metz, France </h4>
-
-                    <button id="button4" onclick="myFunction('gtl-read-more');change('button4');" class="w3-button w3-left-align "><i class='fas fa-plus'></i> Read more</button>
-
-                </div>
-                <p id="gtl-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
-
-            <div class="w3-container event">
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture" src="images/bosch.jpg" alt="profile picture">
-                    <!-- <h4> <i class="fas fa-fw fa-calendar"></i> Summer 2018</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4> -->
-                </div>
-    
-                <div class="w3-container w3-cell event-info">
-                    <h2>Robert Bosch GmbH</h2>
-                    <h3>Engineering Co-op, 1st rotation</h3>
-                    <h4> <i class="fas fa-fw fa-calendar"></i> Summer 2018</h4>
-                    <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4>
-                    
-                    <button id="button4" onclick="myFunction('bosch1st-read-more');change('button4');" class="w3-button w3-left-align"><i class='fas fa-plus'></i> Read more</button>
-
-                </div>
-                <p id="bosch1st-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
-
-            <div class="w3-container event">
-                <div class="w3-container w3-cell event-image w3-center">
-                    <img class="event-picture w3-circle" src="images/3d_printing_2.JPG" alt="profile picture">
-                    <!-- <h4> <i class="fas fa-fw fa-calendar"></i> January 2018 - May 2018</h4> -->
-                    <!-- <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4> -->
-                </div>
-    
-                <div class="w3-container w3-cell event-info">
-                    <h2>Clemson Makerspace</h2>
-                    <h3>Student Intern</h3>
-                    <h4> <i class="fas fa-fw fa-calendar"></i> January 2018 - May 2018</h4>
-                    <h4><i class="fas fa-fw fa-map-marker-alt"></i> Charleston, SC</h4>
-                    
-                    <button id="button5" onclick="myFunction('makerspace-read-more');change('button5');" class="w3-button w3-left-align "><i class='fas fa-plus'></i> Read more</button>
-
-                </div>
-                <p id="makerspace-read-more" class="w3-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
-            
-        </div>
-
-        <div id="skills" class="anchor">
-        </div>
-
-        <div class="skills">
-            <hr>
-            <h1>Skills</h1>
-
-            <div class="skill-type">
-                <h2>Programming</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Flask</li>
-                    <li>MATLAB</li>
-                </ul>
-            </div>
-
-            <div class="skill-type">
-                <h2>Software</h2>
-                <ul>
-                    <li>SOLIDWORKS</li>
-                    <li>Fusion 360</li>
-                    <li>MS Office</li>
-                    <li>MS sPower BI</li>
-                    <li>SAP</li>
-                </ul>
-            </div>
-
-            <div class="skill-type">
-                <h2>Hardware</h2>
-                <ul>
-                    <li>Arduino</li>
-                    <li>Raspberry Pi</li>
-                    <li>3D printing</li>
-                </ul>
-            </div>
-
-            <div class="skill-type">
-                <h2>Other</h2>
-                <ul>
-                    <li>French (un petit peu)</li>
-                    <li>Technical writing</li>
-                    <li>Project management</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="projects">
-        </div>
-
-        <div id="footer" class="anchor">
-        </div>
-
-        <div class="footer">
-            <hr>
-            <h1>Contact</h1>
-            <br>
-            <ul>
-                <li> <a href="mailto:pasterckx@gmail.com"> <i class="fas fa-envelope fa-fw fa-5x"></i> </a> </li>
-                <li> <a href="https://www.linkedin.com/in/petersterckx/"> <i class="fab fa-linkedin fa-fw fa-5x"></i> </a> </li>
+        <nav>
+            <ul class="nav-links">
+                <li><h3>Peter Sterckx</h3></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Experiences</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
-
+        </nav>
+    </header>
+    
+    <section class="splash-page">
+        <div class="splash-image-container">
+            <img src="images/profile.JPG" alt="profile">
         </div>
 
-    </div>
+        <div class="about-container">
+            <p> <i>Hi!</i> </p>
+            <p>I'm an aspiring <br> <strong>software engineer</strong> <br> with a 
+            background in <br> <strong>mechanical engineering</strong>.</p>
+        
+            <button type="button">Contact</button>
+        </div>
+    </section>
     
+    <section class="experiences">
+        <h1>Experiences</h1>
+
+        
+    </section>
 
   </body>
 </html> 
