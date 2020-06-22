@@ -56,7 +56,7 @@ nav {
 }
 
 .splash-image-container {
-    width: 25%;
+    width: 30%;
 }
 
 .splash-image-container img {
@@ -88,13 +88,64 @@ nav {
     font-size: 30px;
   }
 
-  @media screen and (max-width: 1024px) and (min-height: 990px) {
-    .splash-image-container {
-        width: 50%;
+@media screen and (min-width: 1024px) {
+    .splash-page-mobile {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    
+    /* Splash page for mobile */
+    
+    .splash-page {
+        display: none;
     }
 
-    .splash-page {
-        /* background-color: tomato; */
-        width: 95%;
+    .splash-page-mobile {
+        width: 90%;
+        margin: 0 auto 0 auto;
+        height: 70vh;
+        background-color: lightblue;
+        position: relative;
     }
-  }
+
+    .splash-image-container-mobile {
+        height: 80%;
+    }
+
+    .splash-image-container-mobile img {
+        height: 80%;
+        position: absolute;
+        top: 60px;
+    }
+
+    .about-container-mobile {
+        position: absolute;
+        background-color: white;
+        right: 5vw;
+        top: 25vh;
+        padding: 20px 30px 10px 30px;
+        border: solid black 3px;
+        opacity: .9;
+
+        font-size: 2.5em;
+        line-height: 1.5;
+        margin: 0 0 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container-mobile button {
+        background-color: white;
+        border: solid 2px olive;
+        color: olive;
+        padding: 15px 32px;
+        margin: 20px auto 20px 0;
+        text-align: center;
+        text-decoration: none;
+        font-size: 40px;
+      }
+}
