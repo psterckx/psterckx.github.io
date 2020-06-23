@@ -17,14 +17,22 @@ button {
 
 /* Header and nav bar  */
 
+.header {
+    background-color: black;
+}
+
 header {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    /* padding: 0 200px ; */
     align-items: center;
-    height: 10vh;
-
+    height: 8vh;
+    position: fixed;
+    background-color: white;
+    border-bottom: grey 1px solid;
 }
+
 .logo-container {
     flex: 1;
     display: flex;
@@ -33,6 +41,7 @@ header {
 
 nav {
     flex: 1;
+    padding: 0 200px;
 }
 
 .nav-links {
@@ -45,6 +54,13 @@ nav {
     text-decoration: none;
     font-size: 20px;
     color: olive;
+    font-family: OpenSans, sans-serif;
+}
+
+.nav-links h3 {
+    font-family: OpenSans, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 /* Splash page  */
@@ -52,11 +68,12 @@ nav {
 .splash-page {
     display:flex;
     width: 80%;
-    margin: 0 auto 10vh auto;
+    margin: 0 auto 2vh auto;
+    padding-top: 8vh;
     /* background-color: lightblue; */
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
     /* flex-direction: column; */
 }
 
@@ -125,8 +142,9 @@ nav {
 }
 
 .flex-container h1 {
-    font-weight: 400;
+    font-weight: 500;
     padding: 0 0 5px 0;
+    color: olive;
 }
 
 .flex-container h2 {
@@ -143,6 +161,26 @@ nav {
     padding: 10px 0;
     font-size: 15px;
 }
+
+section > h1 {
+    color: black;
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: OpenSans, sans-serif;
+    font-weight: 300;
+}
+
+/* Skills  */
+
+/* .skills > h1 {
+    color: black;
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: OpenSans, sans-serif;
+    font-weight: 300;
+} */
 
 
 /* Media queries for mobile */
