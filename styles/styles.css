@@ -1,3 +1,5 @@
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,10 @@ button {
     font-weight: 300;
 }
 
+/* Header and nav bar  */
+
 header {
     display: flex;
-    /* background-color: lightblue; */
     width: 80%;
     margin: auto;
     align-items: center;
@@ -43,6 +46,8 @@ nav {
     font-size: 20px;
     color: olive;
 }
+
+/* Splash page  */
 
 .splash-page {
     display:flex;
@@ -86,15 +91,67 @@ nav {
     text-align: center;
     text-decoration: none;
     font-size: 30px;
-  }
+}
+
+/* Experiences */
+
+.flex-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 60px auto;
+    width: 70%;
+    /* background-color: lightblue; */
+}
+
+.flex-item-img {
+    /* border: 2px solid black; */
+    flex: 1.4;
+    padding: 10px 0;
+}
+
+.flex-item-about {
+    /* border: 2px solid black; */
+    flex: 2;
+    padding: 0 30px;
+    /* line-height: 1.4; */
+}
+
+.flex-item-img img {
+    /* height: 30vh; */
+    width: 320px;
+    margin: 0 auto 0 auto;
+    display: block;
+    box-shadow: 12px 12px 10px grey;
+}
+
+.flex-container h1 {
+    font-weight: 400;
+    padding: 0 0 5px 0;
+}
+
+.flex-container h2 {
+    font-weight: 400;
+    padding: 0 0 5px 0;
+}
+
+.flex-container h3 {
+    font-weight: 400;
+    padding: 0 0 5px 0;
+}
+
+.flex-container p {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+
+/* Media queries for mobile */
 
 @media screen and (min-width: 1024px) {
     .splash-page-mobile {
         display: none;
     }
 }
-
-
 
 @media screen and (max-width: 1023px) {
     
@@ -108,7 +165,7 @@ nav {
         width: 90%;
         margin: 0 auto 0 auto;
         height: 70vh;
-        background-color: lightblue;
+        /* background-color: lightblue; */
         position: relative;
     }
 
@@ -149,3 +206,4 @@ nav {
         font-size: 40px;
       }
 }
+
