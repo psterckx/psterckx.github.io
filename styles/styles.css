@@ -48,6 +48,7 @@ nav {
     display: flex;
     list-style: none;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-links a {
@@ -61,6 +62,11 @@ nav {
     font-family: OpenSans, sans-serif;
     font-size: 25px;
     font-weight: 400;
+    color: black;
+}
+
+.nav-links h3:hover {
+    color: olive;
 }
 
 /* Splash page  */
@@ -145,16 +151,19 @@ nav {
     font-weight: 500;
     padding: 0 0 5px 0;
     color: olive;
+    font-size: 30px;
 }
 
 .flex-container h2 {
     font-weight: 400;
     padding: 0 0 5px 0;
+    font-size: 25px;
 }
 
 .flex-container h3 {
     font-weight: 400;
     padding: 0 0 5px 0;
+    font-size: 20px;
 }
 
 .flex-container p {
@@ -162,7 +171,7 @@ nav {
     font-size: 15px;
 }
 
-section > h1 {
+section.experiences > h1 {
     color: black;
     font-size: 45px;
     margin: 0 auto;
@@ -173,15 +182,85 @@ section > h1 {
 
 /* Skills  */
 
-/* .skills > h1 {
+section.skills > h1 {
+    /* color: black; */
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+.skills {
+    background-color: black;
+    padding: 20px 0;
+    color: greenyellow;
+    /* height: 90vh; */
+    /* background-image: linear-gradient(black,white); */
+}
+
+.skills .flex-container {
+    display: flex;
+    margin: 60px auto;
+    width: 60%;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.skills .flex-item {
+    width: 40%;
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 2;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.skills .flex-item li {
+    list-style: none;
+}
+
+.skills .flex-item li:hover {
+    color: red;
+}
+
+.skills .flex-item h2 {
+    font-weight: 500;
+    padding: 0 0 5px 0;
+    /* color: black; */
+    font-size: 30px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 20px 0;
+    /* height: 88vh; */
+}
+
+section.contact > h1 {
     color: black;
     font-size: 45px;
     margin: 0 auto;
     text-align: center;
     font-family: OpenSans, sans-serif;
     font-weight: 300;
-} */
+}
 
+.contact .flex-container {
+    display: flex;
+    margin: 60px auto;
+    width: 40%;
+    justify-content: space-around;
+}
+
+/* Anchor */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
 
 /* Media queries for mobile */
 

@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="scripts/script.js"></script>
-
+    <script src="https://kit.fontawesome.com/6f160e49be.js" crossorigin="anonymous"></script>
 </head>
   <body>
 
@@ -16,18 +17,17 @@
         <header>
             <nav>
                 <ul class="nav-links">
-                    <li><h3>Peter Sterckx</h3></li>
-                    <li></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Experiences</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a target="_blank" href="files/Resume.pdf"><h3>Peter Sterckx</h3></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
     <!-- </span> -->
     
-    <section class="splash-page">
+    <section class="splash-page" id="about">
         <div class="splash-image-container">
             <img src="images/profile.JPG" alt="profile">
         </div>
@@ -59,7 +59,10 @@
         
     </section> -->
     
-    <section class="experiences">
+
+
+    <section class="experiences" id="">
+        <a class="anchor" id="experiences"></a>
 
         <h1> - Experiences - </h1>
 
@@ -161,11 +164,64 @@
 
     </section>
 
-    <section class="skills">
+    <section class="skills" id="">
+        <a class="anchor" id="skills"></a>
 
         <h1> - Skills - </h1>
 
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Programming</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>MATLAB</li>
+                    <li>Arduino</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div class="flex-item">
+                <h2>Software</h2>
+                <ul>
+                    <li>SolidWorks</li>
+                    <li>Fusion 360</li>
+                    <li>MS Power BI</li>
+                    <li>MS Office</li>
+                </ul>
+            </div>
+
+            <div class="flex-item">
+                <h2>Other</h2>
+                <ul>
+                    <li>French</li>
+                    <li>Technical writing</li>
+                    <li>Project management</li>
+                </ul>
+            </div>
+        </div>
+
     </section>  
+
+    <section class="contact" id="contact">
+        <h1> - Contact - </h1>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <a target="_blank" href="https://www.linkedin.com/in/petersterckx/"><i class="fab fa-linkedin fa-8x" style="color:#067bb6"></i></a> 
+            </div>
+
+            <div class="flex-item">
+                <a target="_blank" href="mailto:pasterckx@gmail.com"><i class="fas fa-envelope fa-8x" style="color:#da2f23"></i></a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
 
   </body>
 </html> 
