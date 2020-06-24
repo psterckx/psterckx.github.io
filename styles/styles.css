@@ -302,6 +302,8 @@ section.contact > h1 {
 .gallery .flex-container {
     display: flex;
     max-height: 100%;
+    text-align: left;
+    /* background-color: lightcoral; */
 }
 
 /* .gallery .flex-item-img {
@@ -319,30 +321,44 @@ section.contact > h1 {
 }
 
 .gallery .flex-item-about h1 {
-    margin: 140px 0 50px 100px;
+    margin: 20px 0 50px 50px;
     height: 20px;
     font-size: 40px;
     color: black;
     font-weight: 300;
 }
 
-.gallery .flex-item-about p {
-    margin: 0px 100px 0 100px;
+.gallery .flex-item-about h3 {
+    margin: 100px 0 0px 50px;
+    height: 20px;
     font-size: 20px;
     color: black;
     font-weight: 300;
+}
+
+.gallery .flex-item-about p {
+    margin: 0px 50px 0 50px;
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    height: 60px;
 }
 
 .gallery img {
     max-width: 50%;
     object-fit: cover;
     /* display: block; */
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
+}
+
+.gallery p a {
+    text-decoration: none;
+    color: #023d5e;
 }
 
 .gallery a {
     text-decoration: none;
-    color: #023d5e;
+    color: black;
 }
 
 .fade-in{

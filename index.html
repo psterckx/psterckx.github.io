@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6f160e49be.js" crossorigin="anonymous"></script>
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
     <script src="scripts/script.js"></script>
 
 </head>
@@ -92,7 +91,7 @@
 
         <div class="flex-container">    
             <div class="flex-item-img">
-                <img src="images/cuhackit.jpeg" alt="CUhackit" style="border:black solid 2px;">
+                <img src="images/cuhackit.jpg" alt="CUhackit" style="border:black solid 2px;">
             </div>
             <div class="flex-item-about">
                 <h1>CUhackit</h1>
@@ -141,7 +140,7 @@
 
         <div class="flex-container">    
             <div class="flex-item-img">
-                <img src="images/metz3.jpeg" alt="Metz">
+                <img src="images/metz3.jpg" alt="Metz">
             </div>
             <div class="flex-item-about">
                 <h1>Georgia Institute of Technology</h1>
@@ -261,21 +260,29 @@
         </div>
     </section>
 
-    <div id="banner-load"></div>
+    <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+  
+    <script>
+        var images = ['tiger.jpg', 'bosch.JPG','metz3.jpeg'];
+        
+        $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+    </script> -->
 
+    
 
     <section class="gallery">
         <div class="flex-container">  
-
-            <!-- <div id="banner-load"></div> -->
-                <!-- <img src="images/metz3.jpeg" alt="Metz"> -->
+            
+            <img class="fade-in" id="gallery-image" src="images/metz3.jpg" alt="Metz">
                 
+            <div class="flex-item-about fade-in">
+                <h3 id="date">Fall 2018</h3>
 
-            <div class="flex-item-about">
                 <h1>
-                    <i class="fas fa-map-marker-alt"></i> Metz, France
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <a href="" id="location" target="_blank" >Metz, France</a> 
                 </h1>
-                <p>
+                <p id="about-location">
                     The home of Georgia Tech Lorraine, where I studied abroad during the fall of 2018.
                 </p>
                 <p>
@@ -285,9 +292,41 @@
             </div>
 
         </div>
-        
 
     </section>
+
+    <script>
+        var options = {velo:['Metz, France','August 2018','The trusty bike (vélo en français) that I used while studying abroad!','velo.jpg'],
+        monaco:['Port de Fontvieille, Monaco','September 2018','<br>','monaco.jpg'],
+        blue_water:['Interlaken, Switzerland','September 2018','Beautiful blue water caused by sediments in the glacial melt.','blue_water.jpg'],
+        schilthorn:['Bernese Oberland, Switzerland','October 2018','Hiking up to the Schilthorn presents wonderful views of the Bernese Alps.','schilthorn.jpg'],
+        cows:['Bernese Oberland, Switzerland','October 2018','Happy Swiss cows greet us on our hike.','cows.jpg'],
+        salmon:['Strasbourg, France','November 2018','Smoked salmon at the Strasbourg Christmas market.','salmon.jpg'],
+        denmark:['Copenhagen, Denmark','November 2018','Sarah, Maddie, and I discovering the city of Copenhagen.','denmark.jpg'],
+        toxaway:['Toxaway River⁩, SC','March 2019','Backpacking the Foothills Trail through the SC upstate.','toxaway.jpg'],
+        winery:['‎⁨⁨Alsace⁩, ⁨France⁩','August 2018','Tasting the grapes of Alsace.','winery.jpg'],
+        alsace:['‎⁨⁨Eguisheim⁩, ⁨France⁩','August 2018','<br>','alsace.jpg'],
+        kaktovik:['‎⁨⁨Kaktovik, Alaska⁩','May 2018','A trip to the remote town of Kaktovik with the Clemson National Scholars Program.','kaktovik.jpg'],
+        charlie_plane:['Talkeetna⁩, ⁨Alaska','May 2018','Charlie and I awating our flight over Denali with the Clemson National Scholars Program.','charlie_plane.jpg'],
+        seward:['Seward, ⁨Alaska','May 2018','<br>','seward.jpg'],
+        bird_paradise:['⁨Kirstenbosch National Botanical Gardens⁩, ⁨South Africa⁩','July 2017','<br>','bird_paradise.jpg'],
+        lions_head:['Lions Head⁩, ⁨South Africa⁩','June 2017','<br>','lions_head.jpg']};
+
+
+        var keywords = Object.keys(options);
+        var x = Math.floor(Math.random() * keywords.length)
+        x = keywords.length-1;
+        var list = options[keywords[x]];
+        var image_string = "gallery/" + list[3];
+
+        console.log(list)
+
+        document.getElementById("location").innerHTML = list[0];
+        document.getElementById("date").innerHTML = list[1];
+        document.getElementById("about-location").innerHTML = list[2];
+        document.getElementById("gallery-image").setAttribute("src", image_string);
+        document.getElementById("location").setAttribute("href", "https://www.google.com/maps/search/"+list[0]);
+    </script>
 
   </body>
 </html> 
