@@ -77,7 +77,7 @@ nav {
 
 .splash-page {
     display:flex;
-    width: 80%;
+    width: 75%;
     margin: 0 auto 2vh auto;
     padding-top: 8vh;
     /* background-color: lightblue; */
@@ -88,7 +88,7 @@ nav {
 }
 
 .splash-image-container {
-    width: 30%;
+    width: 300px;
 }
 
 .splash-image-container img {
@@ -96,9 +96,9 @@ nav {
 }
 
 .about-container {
-    font-size: 35px;
+    font-size: 1.8vw;
     line-height: 1.5;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 3vw;
     display: flex;
     flex-direction: column;
     /* justify-content: flex-end; */
@@ -109,7 +109,7 @@ nav {
     font-weight: 400;
 }
 
-.about-container button {
+/* .about-container button {
     background-color: white;
     border: solid 2px olive;
     color: olive;
@@ -120,16 +120,17 @@ nav {
     font-size: 30px;
     font-weight: 300;
     width: 180px;
-}
+} */
 
 .about-container a {
     text-decoration: none;
     color: olive;
     border: solid 2px olive;
     background-color: white;
-    width: 180px;
+    width: 10vw;
     margin: 20px 0;
     text-align: center;
+    padding: 0 20px;
 }
 
 .about-container a:hover {
@@ -394,61 +395,223 @@ a.anchor {
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 450px) {
     
-    /* Splash page for mobile */
+    /* Nav bar for mobile */
 
-    nav {
+    header {
         display: none;
     }
-    
+
+
+    /* Splash page for mobile */
+
+
     .splash-page {
         display: none;
     }
 
-    .splash-page-mobile {
-        width: 90%;
-        margin: 0 auto 0 auto;
-        height: 70vh;
-        /* background-color: lightblue; */
+    .splash-container-mobile {
+        /* display: inline-block; */
         position: relative;
     }
 
-    .splash-image-container-mobile {
-        height: 80%;
+    .splash-container-mobile img {
+        width: 70%;
+        margin: 14vh 0 0 20px;
     }
 
-    .splash-image-container-mobile img {
-        height: 80%;
-        position: absolute;
-        top: 60px;
-    }
-
-    .about-container-mobile {
-        position: absolute;
+    .splash-container-mobile div {
         background-color: white;
-        right: 3vw;
-        top: 30vh;
-        padding: 10px 20px 5px 20px;
-        border: solid black 3px;
-        opacity: .9;
+        border: 2px black solid;
+        position: absolute;
+        padding: 15px 20px;
+        opacity: 1;
+        bottom: 60px;
+        right: 10px;
+        font-size: 5vw;
+        /* height: 200px; */
+    }
 
-        font-size: .8em;
-        line-height: 1.5;
-        margin: 0 0 0 40px;
+    .splash-container-mobile a {
+        text-decoration: none;
+        color: olive;
+        border: solid 2px olive;
+        background-color: white;
+        width: 8vw;
+        margin: 10px 0;
+        text-align: center;
+        padding: 5px 20px;
+    }
+
+    /* Experiences for mobile */
+
+    .experiences .flex-container {
         display: flex;
+        margin: 40px auto 0px auto;
+        width: 90%;
         flex-direction: column;
     }
-
-    .about-container-mobile button {
-        background-color: white;
-        border: solid 2px olive;
+    
+    .experiences .flex-item-img {
+        /* border: 2px solid black; */
+        flex: 1;
+        /* padding: 10px 0; */
+    }
+    
+    .experiences .flex-item-about {
+        /* border: 2px solid black; */
+        flex: 1;
+        padding: 10px 10px;
+        line-height: 1.4;
+        font-size: 4vw;
+        /* border: 1px solid grey; */
+        box-shadow: 5px 5px 10px grey;
+    }
+    
+    .experiences .flex-item-img img {
+        /* height: 30vh; */
+        width: 90%;
+        margin: 0 auto 20px auto;
+        display: block;
+        box-shadow: 5px 5px 10px grey;
+    }
+    
+    .flex-container h1 {
+        font-weight: 500;
+        padding: 0 0 5px 0;
         color: olive;
-        padding: 5px 10px;
-        margin: 10px auto 10px 0;
+        font-size: 8vw;
+    }
+    
+    .flex-container h2 {
+        font-weight: 400;
+        padding: 0 0 5px 0;
+        font-size: 7vw;
+    }
+    
+    .flex-container h3 {
+        font-weight: 400;
+        /* padding: 0 0 5px 0; */
+        font-size: 4vw;
+    }
+    
+    .flex-container p {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    
+    section.experiences > h1 {
+        color: black;
+        font-size: 10vw;
+        margin: 30px auto -30px auto;
         text-align: center;
+        font-family: OpenSans, sans-serif;
+        font-weight: 300;
+    }
+    
+    .experiences li {
+        /* list-style: none; */
+        margin: 2px 0 0 20px;
+    }
+    
+    .experiences a {
+        color: #023d5e;
         text-decoration: none;
-        font-size: 1em;
-      }
+        font-weight: bold;
+    }
+    
+    .experiences a:hover {
+        color: #f68045;
+        text-decoration: none;
+    }
+
+    /* Skills for mobile */
+
+    section.skills > h1 {
+        /* color: black; */
+        font-size: 10vw;
+        margin: 0 auto;
+        text-align: center;
+        font-family: OpenSans, sans-serif;
+        font-weight: 300;
+    }
+    
+    .skills {
+        background-color: lightgrey;
+        padding: 20px 0;
+        margin: 20px 0;
+        /* color: greenyellow; */
+        /* height: 90vh; */
+        /* background-image: linear-gradient(black,white); */
+    }
+    
+    .skills .flex-container {
+        display: flex;
+        margin: 20px auto;
+        width: 70%;
+        justify-content: space-around;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .skills .flex-item {
+        width: 20%;
+        margin: 0 10px;
+        font-size: 6vw;
+        line-height: 2;
+        /* border: 2px black solid; */
+        /* font-family: 'Roboto Mono', monospace; */
+    }
+    
+    .skills .flex-item li {
+        list-style: none;
+    }
+    
+    .skills .flex-item li:hover {
+        color: red;
+    }
+    
+    .skills .flex-item h2 {
+        font-weight: 500;
+        padding: 0 0 5px 0;
+        /* color: black; */
+        font-size: 8vw;
+    }
+
+    /* Contact for mobile */
+
+    .contact {
+        padding-top: 22px;
+        height: 32vh;
+    }
+    
+    section.contact > h1 {
+        color: black;
+        font-size: 10vw;
+        margin: 0 auto -20px auto;
+        text-align: center;
+        font-family: OpenSans, sans-serif;
+        font-weight: 300;
+    }
+    
+    .contact .flex-container {
+        display: flex;
+        margin: 60px auto;
+        width: 40%;
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+
+    .contact .flex-item {
+        padding: 0 30px;
+    }
+
+    /* Gallery for mobile */
+
+    .gallery {
+        display: none;
+    }
+
 }
 
