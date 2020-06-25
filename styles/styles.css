@@ -17,8 +17,12 @@ button {
 
 /* Header and nav bar  */
 
-.header {
-    background-color: black;
+.header-mobile {
+    display: none;
+}
+
+.splash-container-mobile {
+    display: none;
 }
 
 header {
@@ -54,8 +58,8 @@ nav {
 .nav-links a {
     text-decoration: none;
     font-size: 20px;
-    color: olive;
-    font-family: OpenSans, sans-serif;
+    color: #023d5e;
+    /* font-family: OpenSans, sans-serif; */
 }
 
 .nav-links a:hover {
@@ -63,7 +67,7 @@ nav {
 }
 
 .nav-links h3 {
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     font-size: 25px;
     font-weight: 400;
     color: black;
@@ -80,7 +84,6 @@ nav {
     width: 75%;
     margin: 0 auto 2vh auto;
     padding-top: 8vh;
-    /* background-color: lightblue; */
     align-items: center;
     justify-content: center;
     height: 90vh;
@@ -111,8 +114,8 @@ nav {
 
 /* .about-container button {
     background-color: white;
-    border: solid 2px olive;
-    color: olive;
+    border: solid 2px #023d5e;
+    color: #023d5e;
     padding: 15px 32px;
     margin: 20px auto 20px 0;
     text-align: center;
@@ -124,8 +127,8 @@ nav {
 
 .about-container a {
     text-decoration: none;
-    color: olive;
-    border: solid 2px olive;
+    color: #023d5e;
+    border: solid 2px #023d5e;
     background-color: white;
     width: 10vw;
     margin: 20px 0;
@@ -141,12 +144,17 @@ nav {
 
 /* Experiences */
 
+.experiences {
+    /* background-image: linear-gradient(white,#faedd4); */
+    padding-bottom: 40px;
+}
+
 .experiences .flex-container {
     display: flex;
     /* flex-wrap: wrap; */
-    margin: 60px auto;
+    margin: 60px auto 0 auto;
     width: 70%;
-    /* background-color: lightblue; */
+    /* background-color: #f8d285; */
 }
 
 .experiences .flex-item-img {
@@ -158,8 +166,9 @@ nav {
 .experiences .flex-item-about {
     /* border: 2px solid black; */
     flex: 2;
-    padding: 0 30px;
+    padding: 0px 30px;
     line-height: 1.4;
+    /* box-shadow: 2px 2px 4px grey; */
 }
 
 .experiences .flex-item-img img {
@@ -167,13 +176,13 @@ nav {
     width: 320px;
     margin: 0 auto 0 auto;
     display: block;
-    box-shadow: 12px 12px 10px grey;
+    box-shadow: 2px 2px 4px grey;
 }
 
 .flex-container h1 {
     font-weight: 500;
     /* padding: 0 0 5px 0; */
-    color: olive;
+    color: #023d5e;
     font-size: 30px;
 }
 
@@ -199,7 +208,7 @@ section.experiences > h1 {
     font-size: 45px;
     margin: 0 auto;
     text-align: center;
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     font-weight: 300;
 }
 
@@ -226,13 +235,14 @@ section.skills > h1 {
     font-size: 45px;
     margin: 0 auto;
     text-align: center;
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     font-weight: 300;
 }
 
 .skills {
-    background-color: lightgrey;
-    padding: 20px 0;
+    /* background-color: #fae7c0; */
+    background-color: #eeeeee;
+    padding: 30px 0;
     /* color: greenyellow; */
     /* height: 90vh; */
     /* background-image: linear-gradient(black,white); */
@@ -251,6 +261,7 @@ section.skills > h1 {
     margin: 0 10px;
     font-size: 20px;
     line-height: 2;
+    font-weight: 350;
     /* border: 2px black solid; */
     /* font-family: 'Roboto Mono', monospace; */
 }
@@ -260,7 +271,8 @@ section.skills > h1 {
 }
 
 .skills .flex-item li:hover {
-    color: red;
+    color: #023d5e;
+    font-weight: 500;
 }
 
 .skills .flex-item h2 {
@@ -275,6 +287,7 @@ section.skills > h1 {
 .contact {
     padding-top: 22px;
     height: 32vh;
+    /* background-color: #fde0a6; */
 }
 
 section.contact > h1 {
@@ -282,7 +295,7 @@ section.contact > h1 {
     font-size: 45px;
     margin: 0 auto -20px auto;
     text-align: center;
-    font-family: OpenSans, sans-serif;
+    /* font-family: OpenSans, sans-serif; */
     font-weight: 300;
 }
 
@@ -293,11 +306,17 @@ section.contact > h1 {
     justify-content: space-around;
 }
 
+.contact .flex-item {
+    padding: 10px;
+}
+
+
 /* Gallery */
 
 .gallery {
     height: 58vh;
     width: 100%;
+    /* background-color: #fdd991; */
     /* border-top: grey 2px solid; */
 }
 
@@ -358,6 +377,10 @@ section.contact > h1 {
     color: #023d5e;
 }
 
+.gallery p a:hover {
+    color: #f68045;
+}
+
 .gallery a {
     text-decoration: none;
     color: black;
@@ -389,36 +412,119 @@ a.anchor {
 
 /* Media queries for mobile */
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .splash-page-mobile {
         display: none;
     }
-}
+} */
 
 @media screen and (max-width: 450px) {
     
     /* Nav bar for mobile */
 
-    header {
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -14vh;
+        visibility: hidden;
+    }
+
+    .header-desktop {
         display: none;
     }
 
+    .header-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 12vh;
+        background-color: white;
+    }
+
+    .nav {
+        border-bottom: 1px solid grey;
+        text-align: right;
+        height: 12vh;
+        line-height: 12vh;
+    }
+
+    .menu {
+        margin: -4px 30px 0 0;
+        text-align: center;
+        width: 100%;
+        display: block;
+        visibility: hidden;
+        z-index: 3;
+        background-color: white;
+        /* padding-bottom: 500px; */
+        transition: width 1000ms;
+        /* height: 0px; */
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s linear;
+        /* background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,.8)); */
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #023d5e;
+        margin: 0 0px;
+        display: block;    
+        z-index: 1;
+        font-size: 8vw;
+    }
+
+    /* .menu a:active {
+        background-color: blue;
+    } */
+
+    .nav label {
+        margin: 0 20px 0 0;
+        font-size: 30px;
+        line-height: 12vh;
+    }
+
+    .nav h1 {
+        font-size: 8vw;
+        float: left;
+        margin: 0 0 0 20px;
+        font-weight: 400;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+        visibility: visible;
+        opacity: .95;
+    }
+
+    /* #toggle:checked + .splash-container-mobile img { */
+        /* display: block;
+        padding-bottom: 100px; */
+        /* margin-top: 100vh; */
+    /* } */
 
     /* Splash page for mobile */
-
 
     .splash-page {
         display: none;
     }
 
     .splash-container-mobile {
-        /* display: inline-block; */
+        display: block;
         position: relative;
+        z-index: -1;
+        margin: 16vh 2vh 0 2vh;
     }
 
     .splash-container-mobile img {
         width: 70%;
-        margin: 14vh 0 0 20px;
+        /* margin: 8vh 0 0 20px; */
     }
 
     .splash-container-mobile div {
@@ -428,15 +534,16 @@ a.anchor {
         padding: 15px 20px;
         opacity: 1;
         bottom: 60px;
-        right: 10px;
+        right: 0px;
         font-size: 5vw;
+        line-height: 1.2;
         /* height: 200px; */
     }
 
     .splash-container-mobile a {
         text-decoration: none;
-        color: olive;
-        border: solid 2px olive;
+        color: #023d5e;
+        border: solid 2px #023d5e;
         background-color: white;
         width: 8vw;
         margin: 10px 0;
@@ -445,6 +552,11 @@ a.anchor {
     }
 
     /* Experiences for mobile */
+
+    .experiences {
+        background-image: none;
+        /* z-index: -1; */
+    }
 
     .experiences .flex-container {
         display: flex;
@@ -466,7 +578,8 @@ a.anchor {
         line-height: 1.4;
         font-size: 4vw;
         /* border: 1px solid grey; */
-        box-shadow: 5px 5px 10px grey;
+        box-shadow: 2px 2px 4px grey;
+        background-color: white;
     }
     
     .experiences .flex-item-img img {
@@ -474,13 +587,13 @@ a.anchor {
         width: 90%;
         margin: 0 auto 20px auto;
         display: block;
-        box-shadow: 5px 5px 10px grey;
+        box-shadow: 2px 2px 4px grey;
     }
     
     .flex-container h1 {
         font-weight: 500;
         padding: 0 0 5px 0;
-        color: olive;
+        color: #023d5e;
         font-size: 8vw;
     }
     
@@ -506,7 +619,6 @@ a.anchor {
         font-size: 10vw;
         margin: 30px auto -30px auto;
         text-align: center;
-        font-family: OpenSans, sans-serif;
         font-weight: 300;
     }
     
@@ -533,12 +645,11 @@ a.anchor {
         font-size: 10vw;
         margin: 0 auto;
         text-align: center;
-        font-family: OpenSans, sans-serif;
         font-weight: 300;
     }
     
     .skills {
-        background-color: lightgrey;
+        background-color: #eeeeee;
         padding: 20px 0;
         margin: 20px 0;
         /* color: greenyellow; */
@@ -556,7 +667,7 @@ a.anchor {
     }
     
     .skills .flex-item {
-        width: 20%;
+        width: 100%;
         margin: 0 10px;
         font-size: 6vw;
         line-height: 2;
@@ -569,7 +680,8 @@ a.anchor {
     }
     
     .skills .flex-item li:hover {
-        color: red;
+        color: #023d5e;
+        font-weight: 500;
     }
     
     .skills .flex-item h2 {
@@ -591,7 +703,6 @@ a.anchor {
         font-size: 10vw;
         margin: 0 auto -20px auto;
         text-align: center;
-        font-family: OpenSans, sans-serif;
         font-weight: 300;
     }
     
@@ -614,4 +725,3 @@ a.anchor {
     }
 
 }
-

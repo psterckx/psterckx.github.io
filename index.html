@@ -14,7 +14,7 @@
 </head>
   <body>
 
-        <header>
+        <header class="header-desktop">
             <nav>
                 <ul class="nav-links">
                     <li><a target="_blank" href="files/Resume.pdf"><h3>Peter Sterckx</h3></a></li>
@@ -26,19 +26,21 @@
             </nav>
         </header>
 
-        <header class="header-mobile">
-            <nav>
-                <ul class="nav-links">
-                    <li><a target="_blank" href="files/Resume.pdf"><h3>Peter Sterckx</h3></a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="header-mobile">
+            <div class="nav">
+                <h1>Peter Sterckx</h1>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                    <a onclick="hideNav()" href="#about-mobile">About</a>
+                    <a onclick="hideNav()" href="#experiences">Experiences</a>
+                    <a onclick="hideNav()" href="#skills">Skills</a>
+                    <a onclick="hideNav()" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
     
-    <section class="splash-page" id="about">
+    <section class="splash-page fade-in" id="about">
         <div class="splash-image-container">
             <img src="images/profile.JPG" alt="profile">
         </div>
@@ -52,14 +54,15 @@
         </div>
     </section>
 
-    <section class="splash-page-mobile" id="about">
+    <section class="splash-page-mobile" id="">
+        <a class="anchor" id="about-mobile"></a>
         
         <div class="splash-container-mobile">
             <img src="images/profile.JPG" alt="profile">
         
             <div>
                 <p> <i><strong>Hi!</strong></i> </p>
-                <p>I'm an aspiring <br> <strong>software </strong> <br> with a 
+                <p>I'm an aspiring <br> <strong>software engineer</strong> <br> with a 
                 background in <br> <strong>mechanical engineering</strong>.</p>
                     
                     <br>
@@ -102,7 +105,7 @@
 
         <div class="flex-container">    
             <div class="flex-item-img">
-                <img src="images/cuhackit.jpg" alt="CUhackit" style="border:black solid 2px;">
+                <img src="images/cuhackit.jpg" alt="CUhackit">
             </div>
             <div class="flex-item-about">
                 <h1>CUhackit</h1>
@@ -130,7 +133,7 @@
 
         <div class="flex-container">    
             <div class="flex-item-img">
-                <img src="images/bosch.jpg" alt="Bosch" style="border:black solid 2px;">
+                <img src="images/bosch.jpg" alt="Bosch">
             </div>
             <div class="flex-item-about">
                 <h1>Robert Bosch GmbH</h1>
@@ -170,7 +173,7 @@
 
         <div class="flex-container">    
             <div class="flex-item-img">
-                <img src="images/bosch.jpg" alt="Bosch" style="border:black solid 2px;">
+                <img src="images/bosch.jpg" alt="Bosch">
             </div>
             <div class="flex-item-about">
                 <h1>Robert Bosch GmbH</h1>
@@ -261,11 +264,11 @@
 
         <div class="flex-container">
             <div class="flex-item">
-                <a target="_blank" href="https://www.linkedin.com/in/petersterckx/"><i class="fab fa-linkedin fa-8x" style="color:#067bb6"></i></a> 
+                <a target="_blank" href="https://www.linkedin.com/in/petersterckx/"><i class="fab fa-linkedin fa-fw fa-8x" style="color:#067bb6"></i></a> 
             </div>
 
             <div class="flex-item">
-                <a target="_blank" href="mailto:pasterckx@gmail.com"><i class="fas fa-envelope fa-8x" style="color:#da2f23"></i></a>
+                <a target="_blank" href="mailto:pasterckx@gmail.com"><i class="fas fa-envelope fa-fw fa-8x" style="color:#da2f23"></i></a>
             </div>
 
         </div>
