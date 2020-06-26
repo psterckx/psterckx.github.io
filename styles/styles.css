@@ -453,6 +453,10 @@ a.anchor {
         background-color: white;
     }
 
+    .header-mobile a {
+        color: black;
+    }
+
     .nav {
         border-bottom: 1px solid grey;
         text-align: right;
