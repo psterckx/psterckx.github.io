@@ -387,61 +387,7 @@ section.contact > h1 {
     color: black;
 }
 
-/* Pics */
-
-.pics {
-    height: 500px;
-    background-color: grey;
-    /* display: inline-block; */
-    /* overflow: hidden; */
-    clear: both;
-
-}
-
-.image {
-    /* border-right: 2px black solid; */
-    height: 100%;
-    width: 50%;
-    text-align: left;
-    position: relative;
-    float: left;
-}
-
-.image img {
-    /* position: absolute; */
-    object-fit: contain;
-    width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.description {
-    /* float: right; */
-    margin: 100px 0 0 100px;
-}
-
-.description h3 {
-    height: 20px;
-    font-size: 20px;
-    color: black;
-    font-weight: 300;
-}
-
-.description h1 {
-    margin: 15px 0 40px 0px;
-    height: 20px;
-    font-size: 40px;
-    color: black;
-    font-weight: 300;
-}
-
-.description p {
-    text-decoration: none;
-    color: #023d5e;
-}
+/* Fade in  */
 
 .fade-in{
     -webkit-animation: fade-in 2s ease;
