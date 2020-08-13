@@ -258,19 +258,23 @@ section.skills > h1 {
 .skills .flex-container {
     display: flex;
     margin: 60px auto;
-    width: 80%;
+    width: 60%;
     justify-content: space-around;
     /* flex-wrap: wrap; */
 }
 
 .skills .flex-item {
     width: 20%;
-    margin: 0 10px;
-    padding: 0 20px;
-    font-size: 20px;
+    margin: 0 10px 0 10px;
+    padding: 0px 20px 0 20px;
+    font-size: 26px;
     line-height: 2;
     font-weight: 350;
-    /* border: 2px black solid; */
+    /* text-align: center; */
+    border: 1px black solid;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 20px;
+    background-color: white;
     /* font-family: 'Roboto Mono', monospace; */
 }
 
