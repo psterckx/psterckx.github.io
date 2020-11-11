@@ -11,15 +11,15 @@ export default class SplashPage extends BaseComponent {
 
         const main = betterCreateElement('section');
 
-        const row = betterCreateElement('div');
+        const row = betterCreateElement('div', 'row');
 
         const col1 = betterCreateElement('div', {
-            class: 'col-md-4 bg-primary',
+            class: 'col-md-4 offset-md-2 bg-primary',
             innerText: 'col-md-4'
         });
 
         const col2 = betterCreateElement('div', {
-            class: 'col-md-4 bg-primary',
+            class: 'col-md-4 bg-warning',
             innerText: 'col-md-4'
         });
 
