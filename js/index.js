@@ -8,6 +8,11 @@ const mobileMenuToggleButton = document.getElementById('mobile-menu-button');
 // const html = document.getElementsByTagName('html');
 
 let mobileMenuVisible = false;
+
+function toggleMobileMenu() {
+    // coverContent.classList.toggle('d-none');
+    // mobileMenu.classList.toggle('d-none');
+    coverContainer.classList.toggle('bg-dark');
     mobileMenuIcon.classList.toggle('fa-bars');
     mobileMenuIcon.classList.toggle('fa-times');
 
