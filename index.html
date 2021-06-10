@@ -1,19 +1,365 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
-    <title>Peter Sterckx</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Peter Sterckx</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./scss/main.css">
 </head>
-  <body>
 
-    <main id="root" class="container"></main>
-    
-  </body>
+<body>
 
-<script src="js/index.js" type="module"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-sm position-absolute">
+    <div class="container-fluid">
+
+      <button class="d-block d-md-none btn btn-link" id="mobile-menu-button" onclick="toggleMobileMenu()">
+        <i class="fas fa-fw fa-bars" id="mobile-menu-icon"></i>
+      </button>
+
+      <ul class="navbar-nav d-none d-md-flex justify-content-between w-100">
+        <li class="nav-start nav-item mx-md-4 mx-lg-4 mx-lx-5">
+          <a href="/" class="nav-link">PS</a>
+        </li>
+        <li class="mx-md-4 mx-lg-4 mx-lx-5 w-30">
+          <ul class="d-flex navbar-nav justify-content-around">
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="/experiences" class="nav-link">Experiences</a>
+            </li>
+            <li>
+              <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="/resume" class="nav-link">Resume</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-end nav-item mx-md-4 mx-lg-4 mx-lx-5">
+          <a href="" class="nav-link text-end">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="masthead">
+
+    <div class="container h-100 cover-container" id="cover-container">
+      <div class="row h-100 align-items-center">
+
+        <div class="col-12 text-center h-25 position-relative">
+
+          <div id="cover-content" class="cover-content">
+            <h1 class="font-weight-light">Peter Sterckx</h1>
+            <p class="lead">Software engineer</p>
+          </div>
+
+          <ul id="mobile-menu" class="mobile-menu">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="/experiences/">Experiences</a>
+            </li>
+            <li>
+              <a href="/projects/">Projects</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid p-0">
+
+    <section id="about" class="row justify-content-center mx-0">
+      <div class="col-12">
+
+        <!-- <div class="row justify-content-center mt-4">
+          <div class="col-4 text-center">
+            <h2>About</h2>
+            <span class="d-sm-none">x-small</span>
+            <span class="d-none d-sm-inline d-md-none">small</span>
+            <span class="d-none d-md-inline d-lg-none">medium</span>
+            <span class="d-none d-lg-inline d-xl-none">large</span>
+            <span class="d-none d-xl-inline d-xxl-none">x-large</span>
+          </div>
+        </div> -->
+
+        <div class="row justify-content-center">
+          <div class="col-8 col-sm-5 col-md-3 col-lg-2 d-flex justify-content-center">
+            <img class="w-100" id="about-image" class="" src="./assests/images/profile.jpg" alt="">
+          </div>
+          <div
+            class="col-10 col-sm-10 col-md-5 col-lg-4 d-flex text-center text-md-start flex-column justify-content-center">
+            <p class="about-text">I'm a software engineer at Capital One in Richmond,&nbsp;VA.
+            </p>
+            <p class="about-text">
+              Interest include robotics, spaceflight, and business.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experiences" class="row justify-content-center g-0">
+      <div class="col-12 col-md-11">
+
+        <div class="row g-0 justify-content-center">
+          <div class="col-8 text-center mt-5 mb-3">
+            <h2>Recent experiences</h2>
+          </div>
+        </div>
+
+        <!-- content left, image right -->
+        <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
+            <div>
+              <h3>Capital&nbsp;One</h3>
+              <h4>Technology Development Program</h4>
+              <h5>Feb&nbsp;2021 to present | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
+              <p>
+              <ul>
+                <li>
+                  A two-year rotational program designed for technical learning and professional development
+                </li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="./assests/images/west-creek-1.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- image left, content right -->
+        <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 align-items-center">
+            <div>
+              <h3>Capital&nbsp;One</h3>
+              <h4>Capital&nbsp;One Developer&nbsp;Academy</h4>
+              <h5>Aug&nbsp;2020 to Jan&nbsp;2021 (6 months) | <i class="fas fa-map-marker-alt"></i>&nbsp;Richmond,&nbsp;VA</h5>
+              <p>
+              <ul>
+                <li>
+                  Completed a 6-month software engineering training program designed for those without formal education
+                  in computer science
+                </li>
+                <li>
+                  Learned how to build modern web applications using HTML, CSS, and JS
+                </li>
+                <li>
+                  Developed back-end services using REST and GraphQL architectures, primarily with NodeJS and Express
+                </li>
+                <li>
+                  Leveraged the Agile workflow when working with teams
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+            <img class="w-100 pe-md-5" src="./assests/images/west-creek-2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="row g-0 justify-content-center mt-5">
+          <div class="col-12 align-items-center text-center">
+            <a class="align-items-center" href="/experiences/">See all experiences <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+        
+
+
+
+      </div>
+    </section>
+
+    <section id="projects" class="row justify-content-center g-0">
+      <div class="col-12 col-md-11">
+
+        <div class="row g-0 justify-content-center">
+          <div class="col-8 col-md-4 text-center mt-5 mb-3">
+            <h2>Projects</h2>
+          </div>
+        </div>
+
+        <!-- content left, image right -->
+        <div class="row g-0 justify-content-center mb-3">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
+            <div>
+              <h3>Robot Arm</h3>
+              <!-- <h4>Technology Development Program</h4> -->
+              <h5>Feb&nbsp;2021 to present | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="./assests/images/robot-arm-1.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="row g-0 justify-content-center mt-5">
+          <div class="col-12 align-items-center text-center">
+            <a class="align-items-center" href="/experiences/">See all projects <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="row justify-content-center g-0">
+      <div class="col-8 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+
+        <div class="row g-0 justify-content-center">
+          <div class="col-8 col-md-4 text-center mt-5 mb-3">
+            <h2>Skills</h2>
+          </div>
+        </div>
+
+        <div>
+          <div class="row gy-2 align-items-center mb-5 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-start">
+              <h3>Dev</h3>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+              <div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 gy-3 align-items-center justify-content-center">
+                  <div class="col text-center">
+                    <div>HTML</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>CSS</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>JavaScript</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Python</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>NodeJS</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Expess</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>GraphQL</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Django</div>
+                  </div>
+                  <div class="col text-center" style="margin-right: auto;">
+                    <!-- set maring-right: auto for last item -->
+                    <div>Angular</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-2 align-items-center mb-5 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-start">
+              <h3>Software</h3>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+              <div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 gy-3 align-items-center justify-content-center">
+                  <div class="col text-center">
+                    <div>Solidworks</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Fusion 360</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Excel</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Matlab</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Power BI</div>
+                  </div>
+                  <div class="col text-center" style="margin-right: auto;">
+                    <!-- set maring-right: auto for last item -->
+                    <div>SAP</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-2 align-items-center mb-5 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-start">
+              <h3>Hardware</h3>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+              <div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 gy-3 align-items-center justify-content-center">
+                  <div class="col text-center">
+                    <div>3D printing</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>soldering</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>microcontrollers</div>
+                  </div>
+                  <div class="col text-center">
+                    <div>Raspberry Pi</div>
+                  </div>
+                  <div class="col text-center" style="margin-right: auto;">
+                    <!-- set maring-right: auto for last item -->
+                    <div>electronics</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="row justify-content-center mb-5 g-0">
+      <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+        <div class="row justify-content-center">
+          <div class="col-8 text-center mt-3 mb-3">
+            <h2>Contact &#x1F44B;</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-6 text-center">
+            <a class="fs-4" href="mailto:pasterckx@gmail.com" target="_blank">Email</a>
+          </div>
+          <div class="col-6 text-center">
+            <a class="fs-4" href="https://www.linkedin.com/in/petersterckx/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+<script src="js/index.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</html> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/6f160e49be.js" crossorigin="anonymous"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+
+</html>

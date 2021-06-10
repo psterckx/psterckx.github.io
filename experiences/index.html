@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Peter Sterckx</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm position-absolute">
+    <div class="container-fluid">
+
+      <button class="d-block d-md-none btn btn-dark" id="mobile-menu-button" onclick="toggleMobileMenu()">
+        <i class="fas fa-fw fa-bars" id="mobile-menu-icon"></i>
+      </button>
+
+      <ul class="navbar-nav d-none d-md-flex justify-content-between w-100">
+        <li class="nav-start nav-item mx-md-4 mx-lg-4 mx-lx-5">
+          <a href="/" class="nav-link">PS</a>
+        </li>
+        <li class="mx-md-4 mx-lg-4 mx-lx-5 w-30">
+          <ul class="d-flex navbar-nav justify-content-around">
+            <li>
+              <a href="/#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="/experiences" class="nav-link">Experiences</a>
+            </li>
+            <li>
+              <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Resume</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-end nav-item mx-md-4 mx-lg-4 mx-lx-5">
+          <a href="" class="nav-link text-end">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="masthead not-home">
+
+    <div class="container h-100 cover-container" id="cover-container">
+      <div class="row h-100 align-items-center">
+
+        <div class="col-12 text-center h-25 position-relative">
+
+          <!-- <div id="cover-content" class="cover-content">
+            <h1 class="font-weight-light">Peter Sterckx</h1>
+            <p class="lead">Software engineer</p>
+          </div> -->
+
+          <ul id="mobile-menu" class="mobile-menu">
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Experiences</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- <div id="arm1" class="arm1 position-absolute bg-warning">
+        </div>
+        <div id="arm2" class="arm2 position-absolute bg-danger">
+        </div> -->
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid p-0">
+
+    <section id="experiences" class="row justify-content-center g-0">
+      <div class="col-12 col-md-11">
+
+        <div class="row justify-content-center">
+          <div class="col-8 text-center mt-5 mb-3">
+            <h2>Experiences</h2>
+          </div>
+        </div>
+
+        <!-- content left, image right -->
+        <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
+            <div>
+              <h3>Capital&nbsp;One</h3>
+              <h4>Technology Development Program</h4>
+              <h5>Feb&nbsp;2021 to present | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
+              <p>
+              <ul>
+                <li>
+                  A two-year rotational program designed for technical learning and professional development
+                </li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="../assests/images/west-creek-1.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- image left, content right -->
+        <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 align-items-center">
+            <div>
+              <h3>Capital&nbsp;One</h3>
+              <h4>Capital&nbsp;One Developer&nbsp;Academy</h4>
+              <h5>Aug&nbsp;2020 to Jan&nbsp;2021 | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
+              <p>
+              <ul>
+                <li>
+                  Completed a 6-month software engineering training program designed for those without formal education
+                  in computer science
+                </li>
+                <li>
+                  Learned how to build modern web applications using HTML, CSS, and JS
+                </li>
+                <li>
+                  Developed back-end services using REST and GraphQL architectures, primarily with NodeJS and Express
+                </li>
+                <li>
+                  Leveraged the Agile workflow when working with teams
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+            <img class="w-100 pe-md-5" src="../assests/images/west-creek-2.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- content left, image right -->
+        <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
+            <div>
+              <h3>Robert&nbsp;Bosch&nbsp;GmbH</h3>
+              <h4>Engineering Co-op (2 rotations)</h4>
+              <h5>Summer of 2018 & 2019 | <i class="fas fa-map-marker-alt"></i> Charleston,&nbsp;SC</h5>
+              <p>
+              <ul>
+                <li>
+                  Worked on a variety of projects to support the machining and final assembly maintenance technical team
+                  of the electronic stability program
+                  (ESP) production lines
+                </li>
+                <li>
+                  Supported mechanics and engineers during maintenance windows, troubleshooting a variety of mechanical
+                  and electrical systems
+                </li>
+                <li>
+                  Developed a web-based system for tracking the location of robot arms and controllers
+                </li>
+                <li>
+                  Redesigned and built a coolant monitoring system using Arduino
+                </li>
+                <li>
+                  Created new ways to view and understand data concerning failure of multi-component systems
+                </li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="../assests/images/bosch-campus.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- image left, content right -->
+        <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 align-items-center">
+            <div>
+              <h3>Clemson Makerspace</h3>
+              <h4>Intern</h4>
+              <h5>Jan&nbsp;2018 to May&nbsp;2018 | <i class="fas fa-map-marker-alt"></i> Clemson,&nbsp;SC</h5>
+              <p>
+              <ul>
+                <li>
+                  Worked 12 hours per week performing task such as machine maintenance, inventory control, equipment
+                  management,
+                  safety training, and project support
+                </li>
+                <li>
+                  Guided students as they used 3D printers, laser cutters, and other tools to build a variety of
+                  projects
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+            <img class="w-100 pe-md-5" src="../assests/images/3d_printing_2.JPG" alt="">
+          </div>
+        </div>
+
+        <div class="row g-0 justify-content-center my-5">
+          <div class="col-12 align-items-center text-center">
+            <a class="align-items-center" href="/">Home <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+<script src="../js/index.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/6f160e49be.js" crossorigin="anonymous"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+
+</html>
