@@ -2,125 +2,212 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <title>Peter Sterckx</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../scss/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Peter Sterckx</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../scss/main.css">
 </head>
 
 <body>
 
+  <nav class="navbar navbar-expand-sm position-absolute">
+    <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-sm position-absolute">
-        <div class="container-fluid">
+      <button class="d-block d-md-none btn btn-dark" id="mobile-menu-button" onclick="toggleMobileMenu()">
+        <i class="fas fa-fw fa-bars" id="mobile-menu-icon"></i>
+      </button>
 
-            <button class="d-block d-md-none btn btn-dark" id="mobile-menu-button" onclick="toggleMobileMenu()">
-                <i class="fas fa-fw fa-bars" id="mobile-menu-icon"></i>
-            </button>
+      <ul class="navbar-nav d-none d-md-flex justify-content-between w-100">
+        <li class="nav-start nav-item mx-md-4 mx-lg-4 mx-lx-5">
+          <a href="/" class="nav-link">PS</a>
+        </li>
+        <li class="mx-md-4 mx-lg-4 mx-lx-5 w-30">
+          <ul class="d-flex navbar-nav justify-content-around">
+            <li>
+              <a href="/#about" class="nav-link">about</a>
+            </li>
+            <li>
+              <a href="/experiences" class="nav-link">experiences</a>
+            </li>
+            <li>
+              <a href="/projects" class="nav-link">projects</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">resume</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-end nav-item mx-md-4 mx-lg-4 mx-lx-5">
+          <a href="" class="nav-link text-end">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-            <ul class="navbar-nav d-none d-md-flex justify-content-between w-100">
-                <li class="nav-start nav-item mx-md-4 mx-lg-4 mx-lx-5">
-                    <a href="/" class="nav-link">PS</a>
-                </li>
-                <li class="mx-md-4 mx-lg-4 mx-lx-5 w-30">
-                    <ul class="d-flex navbar-nav justify-content-around">
-                        <li>
-                            <a href="/#about" class="nav-link">About</a>
-                        </li>
-                        <li>
-                            <a href="/experiences" class="nav-link">Experiences</a>
-                        </li>
-                        <li>
-                            <a href="/projects" class="nav-link">Projects</a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link">Resume</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-end nav-item mx-md-4 mx-lg-4 mx-lx-5">
-                    <a href="" class="nav-link text-end">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <header class="masthead not-home">
 
-    <header class="masthead not-home">
+    <div class="container h-100 cover-container" id="cover-container">
+      <div class="row h-100 align-items-center">
 
-        <div class="container h-100 cover-container" id="cover-container">
-            <div class="row h-100 align-items-center">
+        <div class="col-12 text-center h-25 position-relative">
 
-                <div class="col-12 text-center h-25 position-relative">
-
-                    <!-- <div id="cover-content" class="cover-content">
+          <!-- <div id="cover-content" class="cover-content">
             <h1 class="font-weight-light">Peter Sterckx</h1>
             <p class="lead">Software engineer</p>
           </div> -->
 
-                    <ul id="mobile-menu" class="mobile-menu">
-                        <li>
-                            <a href="">About</a>
-                        </li>
-                        <li>
-                            <a href="">Experiences</a>
-                        </li>
-                        <li>
-                            <a href="">Projects</a>
-                        </li>
-                    </ul>
+          <ul id="mobile-menu" class="mobile-menu">
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Experiences</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+          </ul>
 
-                </div>
+        </div>
 
-                <!-- <div id="arm1" class="arm1 position-absolute bg-warning">
+        <!-- <div id="arm1" class="arm1 position-absolute bg-warning">
         </div>
         <div id="arm2" class="arm2 position-absolute bg-danger">
         </div> -->
-            </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid p-0">
+
+    <!-- section start -->
+    <section id="experiences" class="row justify-content-center g-0">
+      <div class="col-12 col-md-11">
+        
+        <!-- title -->
+        <div class="row justify-content-center">
+          <div class="col-8 text-center mt-5 mb-3">
+            <h2>projects</h2>
+          </div>
         </div>
-    </header>
 
-    <main class="container-fluid p-0">
-
-        <section id="projects" class="row justify-content-center g-0">
-            <div class="col-12 col-md-11">
-
-                <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 text-center mt-5 mb-3">
-                        <h2>Projects</h2>
-                    </div>
-                </div>
-
-                <!-- content left, image right -->
-                <div class="row g-0 justify-content-center mb-3">
-                    <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
-                        <div>
-                            <h3>Robot Arm</h3>
-                            <!-- <h4>Technology Development Program</h4> -->
-                            <h5>Feb&nbsp;2021 to present | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, molestiae.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
-                        <img class="w-100 ps-md-5" src="../assests/images/robot-arm-1.jpeg" alt="">
-                    </div>
-                </div>
-
-                <div class="row g-0 justify-content-center mt-5">
-                    <div class="col-12 align-items-center text-center">
-                        <a class="align-items-center" href="/">Home <i
-                                class="fas fa-link"></i></a>
-                    </div>
-                </div>
-
+         <!-- content left, image right -->
+         <div class="row g-0 justify-content-center mb-5">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
+            <div>
+              <h3>Starship Notification System</h3>
+              <h5>Spring&nbsp;2021 | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
+              <p>
+              <ul>
+                <li>
+                  Created a notification system based on updates from 
+                  <a href="https://everydayastronaut.com/">everydayastronaut.com</a> using AWS Lambda, SNS, and S3 along with the Serverless Application Framework
+                </li>
+                <li>
+                  Read more at <a href="https://github.com/psterckx/starship-notification-system">github.com/psterckx/starship-notification-system</a>
+                </li>
+              </ul>
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="../assests/images/starship-with-sns.jpeg" alt="">
+          </div>
+        </div>
 
-    </main>
+        <!-- content left, image right -->
+        <div class="row g-0 justify-content-center mb-5">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
+            <div>
+              <h3>Senior Design Project</h3>
+              <h4>Clemson University - Mechanical Engineering</h4>
+              <h5>January&nbsp;2020 to May 2020 | <i class="fas fa-map-marker-alt"></i> Clemson,&nbsp;SC</h5>
+              <p>
+              <ul>
+                <li>
+                  With a small team, designed the controls and data acquisition hardware and software for a small cryogenic chamber used to cool small metal sample
+                </li>
+                <li>
+                  Used a Raspberry Pi with Node-RED to read data from the various sensors and control the system using a PID algorithm
+                </li>
+                <li>
+                  Created a prototype using airflow over a small heater to simulate liquid nitrogen cooling the sample
+                </li>
+                <li>
+                  Worked with 3 other teams to integrate our design into the overall cryogenic chamber system
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="../assests/images/senior_design-prototype.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- image left, content right -->
+        <!-- <div class="row g-0 justify-content-center mb-4">
+          <div class="col-10 col-md-7 col-lg-5 d-flex order-2 align-items-center">
+            <div>
+              <h3>Senior Design Project</h3>
+              <h4>Clemson University - Mechanical Engineering</h4>
+              <h5>January&nbsp;2020 to May 2020 | <i class="fas fa-map-marker-alt"></i> Clemson,&nbsp;SC</h5>
+              <p>
+              <ul>
+                <li>
+                  With a small team, designed the controls and data acquisition hardware and software for a small cryogenic chamber used to cool small metal sample
+                </li>
+                <li>
+                  Used a Raspberry Pi with Node-RED to read data from the various sensors and control the system using a PID algorithm
+                </li>
+                <li>
+                  Created a prototype using airflow over a small heater to simulate liquid nitrogen cooling the sample
+                </li>
+                <li>
+                  Worked with 3 other teams to integrate our design into the overall cryogenic chamber system
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+            <img class="w-100 pe-md-5" src="../assests/images/senior_design-prototype.jpg" alt="">
+          </div>
+        </div> -->
+
+        <div class="row g-0 justify-content-center my-5">
+          <div class="col-12 align-items-center text-center">
+            <a class="align-items-center" href="/">Home <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="row justify-content-center mb-5 g-0">
+      <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+        <div class="row justify-content-center">
+          <div class="col-8 text-center mt-3 mb-3">
+            <h2>contact &#x1F44B;</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-6 text-center">
+            <a class="fs-4" href="mailto:pasterckx@gmail.com" target="_blank">Email</a>
+          </div>
+          <div class="col-6 text-center">
+            <a class="fs-4" href="https://www.linkedin.com/in/petersterckx/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
 
 </body>
 

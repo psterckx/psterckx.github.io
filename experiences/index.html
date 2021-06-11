@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <title>Peter Sterckx</title>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="../scss/main.css">
 </head>
@@ -15,32 +14,32 @@
   <nav class="navbar navbar-expand-sm position-absolute">
     <div class="container-fluid">
 
-      <button class="d-block d-md-none btn btn-dark" id="mobile-menu-button" onclick="toggleMobileMenu()">
+      <!-- <button class="d-block d-md-none btn btn-dark" id="mobile-menu-button" onclick="toggleMobileMenu()">
         <i class="fas fa-fw fa-bars" id="mobile-menu-icon"></i>
-      </button>
+      </button> -->
 
-      <ul class="navbar-nav d-none d-md-flex justify-content-between w-100">
+      <ul class="navbar-nav d-flex justify-content-between w-100">
         <li class="nav-start nav-item mx-md-4 mx-lg-4 mx-lx-5">
           <a href="/" class="nav-link">PS</a>
         </li>
         <li class="mx-md-4 mx-lg-4 mx-lx-5 w-30">
           <ul class="d-flex navbar-nav justify-content-around">
             <li>
-              <a href="/#about" class="nav-link">About</a>
+              <a href="/#about" class="nav-link">about</a>
             </li>
             <li>
-              <a href="/experiences" class="nav-link">Experiences</a>
+              <a href="/experiences" class="nav-link">experiences</a>
             </li>
             <li>
-              <a href="/projects" class="nav-link">Projects</a>
+              <a href="/projects" class="nav-link">projects</a>
             </li>
             <li>
-              <a href="" class="nav-link">Resume</a>
+              <a href="" class="nav-link">resume</a>
             </li>
           </ul>
         </li>
         <li class="nav-end nav-item mx-md-4 mx-lg-4 mx-lx-5">
-          <a href="" class="nav-link text-end">Contact</a>
+          <a href="#contact" class="nav-link text-end">contact</a>
         </li>
       </ul>
     </div>
@@ -58,7 +57,7 @@
             <p class="lead">Software engineer</p>
           </div> -->
 
-          <ul id="mobile-menu" class="mobile-menu">
+          <!-- <ul id="mobile-menu" class="mobile-menu">
             <li>
               <a href="">About</a>
             </li>
@@ -68,14 +67,8 @@
             <li>
               <a href="">Projects</a>
             </li>
-          </ul>
-
+          </ul> -->
         </div>
-
-        <!-- <div id="arm1" class="arm1 position-absolute bg-warning">
-        </div>
-        <div id="arm2" class="arm2 position-absolute bg-danger">
-        </div> -->
       </div>
     </div>
   </header>
@@ -87,7 +80,7 @@
 
         <div class="row justify-content-center">
           <div class="col-8 text-center mt-5 mb-3">
-            <h2>Experiences</h2>
+            <h2>experiences</h2>
           </div>
         </div>
 
@@ -103,12 +96,17 @@
                 <li>
                   A two-year rotational program designed for technical learning and professional development
                 </li>
+                <li>
+                  Help to develop a complex UI platform built in the AWS cloud for internal business use cases
+                </li>
+                <li>
+                  Develop mainly in Vue, Node.js (with Nest framework), and GraphQL
+                </li>
               </ul>
               </p>
-
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
             <img class="w-100 ps-md-5" src="../assests/images/west-creek-1.jpg" alt="">
           </div>
         </div>
@@ -139,7 +137,7 @@
               </p>
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 align-items-center mb-3 mb-md-0">
             <img class="w-100 pe-md-5" src="../assests/images/west-creek-2.jpg" alt="">
           </div>
         </div>
@@ -176,7 +174,7 @@
 
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
             <img class="w-100 ps-md-5" src="../assests/images/bosch-campus.jpg" alt="">
           </div>
         </div>
@@ -203,7 +201,7 @@
               </p>
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 align-items-center mb-3 mb-md-0">
             <img class="w-100 pe-md-5" src="../assests/images/3d_printing_2.JPG" alt="">
           </div>
         </div>
@@ -213,10 +211,30 @@
             <a class="align-items-center" href="/">Home <i class="fas fa-link"></i></a>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section id="contact" class="row justify-content-center mb-5 g-0">
+      <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+        <div class="row justify-content-center">
+          <div class="col-8 text-center mt-3 mb-3">
+            <h2>contact &#x1F44B;</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-6 text-center">
+            <a class="fs-4" href="mailto:pasterckx@gmail.com" target="_blank">Email</a>
+          </div>
+          <div class="col-6 text-center">
+            <a class="fs-4" href="https://www.linkedin.com/in/petersterckx/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
 
       </div>
     </section>
+
 
   </main>
 

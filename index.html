@@ -14,32 +14,32 @@
   <nav class="navbar navbar-expand-sm position-absolute">
     <div class="container-fluid">
 
-      <button class="d-block d-md-none btn btn-link" id="mobile-menu-button" onclick="toggleMobileMenu()">
+      <!-- <button class="d-block d-md-none btn btn-link" id="mobile-menu-button" onclick="toggleMobileMenu()">
         <i class="fas fa-fw fa-bars" id="mobile-menu-icon"></i>
-      </button>
+      </button> -->
 
-      <ul class="navbar-nav d-none d-md-flex justify-content-between w-100">
+      <ul class="navbar-nav d-flex justify-content-between w-100">
         <li class="nav-start nav-item mx-md-4 mx-lg-4 mx-lx-5">
           <a href="/" class="nav-link">PS</a>
         </li>
         <li class="mx-md-4 mx-lg-4 mx-lx-5 w-30">
           <ul class="d-flex navbar-nav justify-content-around">
             <li>
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link">about</a>
             </li>
             <li>
-              <a href="/experiences" class="nav-link">Experiences</a>
+              <a href="/experiences" class="nav-link">experiences</a>
             </li>
             <li>
-              <a href="/projects" class="nav-link">Projects</a>
+              <a href="/projects" class="nav-link">projects</a>
             </li>
             <li>
-              <a href="/resume" class="nav-link">Resume</a>
+              <a href="/resume" class="nav-link">resume</a>
             </li>
           </ul>
         </li>
         <li class="nav-end nav-item mx-md-4 mx-lg-4 mx-lx-5">
-          <a href="" class="nav-link text-end">Contact</a>
+          <a href="#contact" class="nav-link text-end">contact</a>
         </li>
       </ul>
     </div>
@@ -57,7 +57,7 @@
             <p class="lead">Software engineer</p>
           </div>
 
-          <ul id="mobile-menu" class="mobile-menu">
+          <!-- <ul id="mobile-menu" class="mobile-menu">
             <li>
               <a href="#about">About</a>
             </li>
@@ -67,7 +67,7 @@
             <li>
               <a href="/projects/">Projects</a>
             </li>
-          </ul>
+          </ul> -->
 
         </div>
 
@@ -91,7 +91,13 @@
           </div>
         </div> -->
 
-        <div class="row justify-content-center">
+        <div class="row g-0 justify-content-center">
+          <div class="col-8 text-center mt-5 mb-3">
+            <h2>hi! 👋</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
           <div class="col-8 col-sm-5 col-md-3 col-lg-2 d-flex justify-content-center">
             <img class="w-100" id="about-image" class="" src="./assests/images/profile.jpg" alt="">
           </div>
@@ -100,7 +106,7 @@
             <p class="about-text">I'm a software engineer at Capital One in Richmond,&nbsp;VA.
             </p>
             <p class="about-text">
-              Interest include robotics, spaceflight, and business.
+              My interests include robotics, automation, spaceflight, and business.
             </p>
           </div>
         </div>
@@ -108,17 +114,18 @@
       </div>
     </section>
 
+    <!-- Recent Experiences -->
     <section id="experiences" class="row justify-content-center g-0">
       <div class="col-12 col-md-11">
 
         <div class="row g-0 justify-content-center">
           <div class="col-8 text-center mt-5 mb-3">
-            <h2>Recent experiences</h2>
+            <h2>recent experiences</h2>
           </div>
         </div>
 
         <!-- content left, image right -->
-        <div class="row g-0 justify-content-center mb-4">
+        <div class="row g-0 justify-content-center mb-5">
           <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
             <div>
               <h3>Capital&nbsp;One</h3>
@@ -129,18 +136,23 @@
                 <li>
                   A two-year rotational program designed for technical learning and professional development
                 </li>
+                <li>
+                  Help to develop a complex UI platform built in the AWS cloud for internal business use cases
+                </li>
+                <li>
+                  Develop mainly in Vue, Node.js (with Nest framework), and GraphQL
+                </li>
               </ul>
               </p>
-
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
             <img class="w-100 ps-md-5" src="./assests/images/west-creek-1.jpg" alt="">
           </div>
         </div>
 
         <!-- image left, content right -->
-        <div class="row g-0 justify-content-center mb-4">
+        <div class="row g-0 justify-content-center mb-5">
           <div class="col-10 col-md-7 col-lg-5 d-flex order-2 align-items-center">
             <div>
               <h3>Capital&nbsp;One</h3>
@@ -165,7 +177,7 @@
               </p>
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 align-items-center mb-3 mb-md-0">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 align-items-center mb-3 mb-md-0">
             <img class="w-100 pe-md-5" src="./assests/images/west-creek-2.jpg" alt="">
           </div>
         </div>
@@ -176,54 +188,59 @@
           </div>
         </div>
 
-        
-
-
-
       </div>
     </section>
 
+    <!-- Featured Projects -->
     <section id="projects" class="row justify-content-center g-0">
       <div class="col-12 col-md-11">
 
         <div class="row g-0 justify-content-center">
           <div class="col-8 col-md-4 text-center mt-5 mb-3">
-            <h2>Projects</h2>
+            <h2>featured projects</h2>
           </div>
         </div>
 
         <!-- content left, image right -->
-        <div class="row g-0 justify-content-center mb-3">
+        <div class="row g-0 justify-content-center mb-5">
           <div class="col-10 col-md-7 col-lg-5 d-flex order-2 order-md-1 align-items-center">
             <div>
-              <h3>Robot Arm</h3>
-              <!-- <h4>Technology Development Program</h4> -->
-              <h5>Feb&nbsp;2021 to present | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
+              <h3>Starship Notification System</h3>
+              <h5>Spring&nbsp;2021 | <i class="fas fa-map-marker-alt"></i> Richmond,&nbsp;VA</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, molestiae.
+              <ul>
+                <li>
+                  Created a notification system based on updates from 
+                  <a href="https://everydayastronaut.com/">everydayastronaut.com</a> using AWS Lambda, SNS, and S3 along with the Serverless Application Framework
+                </li>
+                <li>
+                  Read more at <a href="https://github.com/psterckx/starship-notification-system">github.com/psterckx/starship-notification-system</a>
+                </li>
+              </ul>
               </p>
             </div>
           </div>
-          <div class="col-7 col-sm-5 col-md-4 col-lg-3 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
-            <img class="w-100 ps-md-5" src="./assests/images/robot-arm-1.jpeg" alt="">
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4 d-flex order-1 order-md-2 align-items-center mb-3 mb-md-0">
+            <img class="w-100 ps-md-5" src="../assests/images/starship-with-sns.jpeg" alt="">
           </div>
         </div>
 
         <div class="row g-0 justify-content-center mt-5">
           <div class="col-12 align-items-center text-center">
-            <a class="align-items-center" href="/experiences/">See all projects <i class="fas fa-link"></i></a>
+            <a class="align-items-center" href="/projects/">See all projects <i class="fas fa-link"></i></a>
           </div>
         </div>
 
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="row justify-content-center g-0">
       <div class="col-8 col-sm-10 col-md-8 col-lg-6 col-xl-6">
 
         <div class="row g-0 justify-content-center">
           <div class="col-8 col-md-4 text-center mt-5 mb-3">
-            <h2>Skills</h2>
+            <h2>skills</h2>
           </div>
         </div>
 
@@ -335,7 +352,7 @@
 
         <div class="row justify-content-center">
           <div class="col-8 text-center mt-3 mb-3">
-            <h2>Contact &#x1F44B;</h2>
+            <h2>contact &#x1F44B;</h2>
           </div>
         </div>
 
