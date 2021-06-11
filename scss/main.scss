@@ -49,7 +49,7 @@ a {
             // background-image: none;
             height: 7vh;
             min-height: 10px;
-            background-image: url('../assests/gallery/schilthorn.jpg');
+            background-image: url('../assests/images/schilthorn.jpg');
             // background-size: 100% 10%;
             // background-repeat: no-repeat;
         }
@@ -57,7 +57,7 @@ a {
 
     &::before {    
         content: "";
-        background-image: url('../assests/gallery/schilthorn.jpg');
+        background-image: url('../assests/images/schilthorn.jpg');
         background-size: cover;
         position: absolute;
         top: 0px;

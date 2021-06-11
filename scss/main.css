@@ -31,12 +31,12 @@ a:hover {
   content: "";
   height: 7vh;
   min-height: 10px;
-  background-image: url("../assests/gallery/schilthorn.jpg");
+  background-image: url("../assests/images/schilthorn.jpg");
 }
 
 .masthead::before {
   content: "";
-  background-image: url("../assests/gallery/schilthorn.jpg");
+  background-image: url("../assests/images/schilthorn.jpg");
   background-size: cover;
   position: absolute;
   top: 0px;
